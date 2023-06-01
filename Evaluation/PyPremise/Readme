@@ -5,7 +5,7 @@ PyPremise (Pypremise.ipynb):
   -	In this notebook we solely implemented the NE free predicted sets, due to them being less noisy and more interpretable
 
   -	PyPremise is a library that can be used for detecting patterns for the prediction outcomes provided.
-    To get these patterns we use the predicted Datasets from evaluation (predicted_NO_NE_tweets_test_formal_preprocessed.csv, predicted_NO_NE_tweets_test_informal_preprocessed.csv) and count the matches (1)
-    and mismatches (0) between predictions and real labels. We then save the tokenized words of each sentence in a list called features, while the PyPremise matching labels are saved in the Py_labels = [] list. 
+    	To get these patterns we use the predicted Datasets from evaluation (predicted_NO_NE_tweets_test_formal_preprocessed.csv, predicted_NO_NE_tweets_test_informal_preprocessed.csv) and count the matches (1)
+    	and mismatches (0) between predictions and real labels. We then save the tokenized words of each sentence in a list called features, while the PyPremise matching labels are saved in the Py_labels = [] list. 
 
   -	The outcome shows in which kind of features the model might show issues or perform specifically well.
