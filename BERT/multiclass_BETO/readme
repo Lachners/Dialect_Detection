@@ -1,20 +1,3 @@
-BERT Model for Dialect Detection (DistilBERT_wNE.ipynb): 
-
-  -	To train the model, it is necessary to make sure that the dataset is declared and at the same time, that the right BETO model is declared for tokenization, config and model.
-  
-  -	The model is trained through the Text Classification DistilBERT configuration of BETO (dccuchile/distilbert-base-spanish-uncased) using the Reduced Dataset (subset_tweets_preprocessed.csv)
-    with a 0.8/0.2 training-testing ratio. 
-    The training works over the text and label columns, thus being the labels encoded, to 1 if it was “ES” or 0 if it was “ARG”.
-    It employes the same architecture (dccuchile/distilbert-base-spanish-uncased) as a tokenizer, configuration and base model.
-    The trainer function by the transformer’s library is employed for executing the process itself. 
-    The output of the training is stored in the “new_stuff” directory. 
-    Using the calculate metrics function, F1 Score is calculated
-
-BETO Model for Dialect Detection without NE (DistilBERT_NoNE.ipynb):
-
-  -	Same as the previous notebook, but implementing the NE free Reduced Dataset (sub_tweets_preprocessed_NO_NER.csv)
-
-
 BETO Model for Multi-Class categorization (multi-class BERT.ipynb):
 	
   -	Same as the previous two ones but trained through the text and background columns instead of the dialect labels by using the Reduced Dataset (subset_tweets_preprocessed.csv). 
