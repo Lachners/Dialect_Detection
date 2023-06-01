@@ -1,1 +1,13 @@
-Intro
+FastText (FastText.ipynb):
+-	To train the model, the Dataset columns must be edited to fit the FastText training format, mainly adding _label_ to each row for the given dialect label, as well as creating a “label_description” column
+which merges the label and the text. After that the data must be splitted into Training and Testing splits (0.8/0.2) and converted into a Dataset through the “train.to_csv” and “test.to_csv” functions.
+
+-	Here, the Reduced Dataset (subset_tweets_preprocessed.csv) was implemented for the training through “fasttext.train_supervised(input=Dataset)”
+
+
+-	For testing inference the method model.predict("sentence") can be used
+
+
+FastText NO NE (FastText_NONE.ipynb):
+-	the same as earlier but using the NE free Reduction set (sub_tweets_preprocessed_NO_NER.csv)
+
