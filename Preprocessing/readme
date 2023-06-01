@@ -1,1 +1,18 @@
-readme
+Preprocessing (Preprocessing.ipynb): 
+-	To use the Preprocessing function, firstly it is recommended to read the csv file as a Dataframe and apply the preprocess to that df. 
+
+-	Includes lower case, removal of punctuation signs, noisy symbols and URL expressions
+
+
+-	In the context of training our models, we reduced the “tweets.csv” file, using df.head(10000) 
+
+→ Reduction Dataset for training (subset_tweets_preprocessed.csv): 10k instances
+
+-	This notebook includes the general Features of the Reduced Dataset for training
+-	This same preprocessing function is employed for preprocessing the Tweets on the research section
+
+Preprocessing NO NE (Preprocessing_NO_NE.ipynb)
+-	its virtually the same code as the normal Preprocessing but adding a filter for NE, using the NER by Manuel Romero (https://huggingface.co/mrm8488/bert-spanish-cased-finetuned-ner)
+→ Reduced Dataset for training NO NE (sub_tweets_preprocessed_NO_NER.csv): 10k instances
+	(might be renamed as subset_tweets_preprocessed_NO_NER.csv in other parts)
+
