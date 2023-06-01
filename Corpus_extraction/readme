@@ -1,1 +1,16 @@
+Corpus extraction (Twitter_extractor.ipynb): 
+  - The main Dataset extracted is collected using the Snscrape Library (https://pypi.org/project/snscrape/). As explained on the Thesis, it extracts tweets from the different backgrounds given both dialects, however,
+    due to the updates in Twitters policy, this method renders obsolete at the current date.
+    
+  - If the account is from a Spanish account, it is labelled as “ES”, if not, then its labelled as “ARG”
+→ Main Dataset (tweets.csv): 30k instances
+
+Evaluation Set extraction (test.ipynb):
+  -	By using the tweepy Library (https://www.tweepy.org/), two extra tweet-collections were extracted for the purpose of evaluation, using firstly tweets from accounts with a high degree of formal language, and after,
+    accounts with informal language. These two collections are then preprocessed and reduced in the same manner as in the Preprocessing Notebook.
+
+→ NO_NE_tweets_test_formal_preprocessed.csv: 2.1k instances
+→ NO_NE_tweets_test_informal_preprocessed.csv: 2k instances
+→ tweets_test_formal_preprocessed.csv: 2.1k instances
+→ tweets_test_informal_preprocessed.csv: 2k instances
 
