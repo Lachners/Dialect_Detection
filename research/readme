@@ -1,1 +1,31 @@
+__________________________________________________________________________________
+
+
+Dialect Mixture and Code-Switching (Dialect_Mix.ipynb):
+
+-	We extract a new collection of Tweets (tweets_dialect_mix.csv) using a very similar code to the one implemented for extracting the Evaluation collection, but instead of setting a query through accounts in this case
+it is through a query formulated through expressions from an Argentinian and Spanish list respectively. Also, it considers on the query Argentina and Spain as the locations to extract from,
+using the expressions from the opposite country. To get as much tweets as possible, “Buenos Aires” and “Madrid” were added as well, which will later be integrated into the Argentina or Spain location category later.
+-	The count of each expression on the total is then counted
+
+Preprocessing and Analysis (analysis_dialect_mix.ipynb):
+
+-	The previously extracted corpus is preprocessed using the same Function as in the Preprocessing Notebook, and the label is predicted for each instance using the DistilBERT model.
+-	Using the outcome of this predictions we plot a graph that uses word counts for each expression and compares it with the proportion of predictions.
+→ tweets_dialect_mix.csv: 375 instances
+-	This Notebook also contains the print_sentences_with_word function, which prints all the sentences extracted that contain a input certain word. This function is used to visualize the context
+in which the expressions might appear.
+
+__________________________________________________________________________________
+
+Relation between Demographic background and Vocabulary (vocab_demographic.ipynb):
+
+-	The Notebook for this part of the work uses the preprocessed version of the Main Dataset extracted at the beginning (tweets_preprocessed.csv)
+for visualizing the the Word Occurrence and Mean Occurrence of expressions from an additional list of words within each category of background.
+A new list is then created and words that do not occur at all are not included in this new list.
+
+-	Using this new list of words, by using the word embeddings from the BERT models trained previously and using additionally the Kmeans function by Sklearn to cluster the expressions together. 
+Finally, the results of all this are plotted.
+
+-	Using an additional list of grammatical features, the embeddings of these expressions are visualized through the same method as before
 
