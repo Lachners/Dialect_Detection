@@ -1,1 +1,19 @@
+Dialect Mixture and Code-Switching (Dialect_Mix.ipynb):
+
+    -	We extract a new collection of Tweets (tweets_dialect_mix.csv) using a very similar code to the one implemented for extracting the Evaluation collection, but instead of setting a query through accounts in this case
+      it is through a query formulated through expressions from an Argentinian and Spanish list respectively. Also, it considers on the query Argentina and Spain as the locations to extract from,
+      using the expressions from the opposite country. To get as much tweets as possible, “Buenos Aires” and “Madrid” were added as well, which will later be integrated into the Argentina or Spain location category later.
+      
+    -	The count of each expression on the total is then counted
+
+Preprocessing and Analysis (analysis_dialect_mix.ipynb):
+
+    -	The previously extracted corpus is preprocessed using the same Function as in the Preprocessing Notebook, and the label is predicted for each instance using the DistilBERT model.
+    
+    -	Using the outcome of this predictions we plot a graph that uses word counts for each expression and compares it with the proportion of predictions.
+  
+→ tweets_dialect_mix.csv: 375 instances
+
+    -	This Notebook also contains the print_sentences_with_word function, which prints all the sentences extracted that contain a input certain word. This function is used to visualize the context in which
+      the expressions might appear.
 
